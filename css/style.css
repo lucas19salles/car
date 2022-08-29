@@ -1,0 +1,75 @@
+body {
+  background-color: hsl(0, 0%, 95%);
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 0.9375rem;
+}
+
+main {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.cars_order_cards {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 20px);
+}
+
+.car {
+  width: 13.33rem;
+  height: 24rem;
+  padding: 40px;
+}
+
+.car.orange,
+.btn_orange {
+  background-color: hsl(31, 77%, 52%);
+  color: hsl(31, 77%, 52%);
+}
+
+.car.cyan,
+.btn_cyan {
+  background-color: hsl(184, 100%, 22%);
+  color: hsl(184, 100%, 22%);
+}
+
+.car.dark_cyan,
+.btn_dark_cyan {
+  background-color: hsl(179, 100%, 13%);
+  color: hsl(179, 100%, 13%);
+}
+
+.car h2 {
+  text-transform: uppercase;
+  font-family: "Big Shoulders Display", cursive;
+  color: hsl(0, 0%, 95%);
+  font-size: 2rem;
+}
+
+.car p {
+  color: hsla(0, 0%, 100%, 0.75);
+}
+
+.car a {
+  display: inline-block;
+  background-color: hsl(0, 0%, 95%);
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  margin-top: 40px;
+}
+
+.car a:hover {
+  background-color: transparent;
+  color: hsla(0, 0%, 100%, 0.75);
+  border: 1px solid hsla(0, 0%, 100%, 0.75);
+}
+
+@media (max-width: 375px) {
+  .cars_cards {
+    display: flex;
+    flex-direction: column;
+  }
+}
